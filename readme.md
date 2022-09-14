@@ -1,6 +1,6 @@
-### projet bulleye
+# projet bulleye
 
-# probleme
+## probleme
 
 - affcihe le score a chaque fois
 -demander le nombre de joueur -> score en dico
