@@ -24,6 +24,17 @@
 
 - la fonction randint de convient pas a cette situation
 - nous avont donc deconvert la fonction random.choices
+comme montrez ci dessous
+
+```python
+from random import choices
+
+point = 0,10,20,30,40
+for i in range(100):
+    bleu = (choices(point , weights= (50,0,5,10,35)))#Fast Overarm 
+    print(f'vous avez gagner {bleu} point')
+
+```
 
 ## les fonction
 
