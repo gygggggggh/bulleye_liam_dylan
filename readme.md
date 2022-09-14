@@ -44,7 +44,7 @@ for i in range(100):
 avec 3 condition
 les 3 mode de tirs
 
-## la boucle
+## la boucle de jeu
 
 ```python
 def boucle principale():
