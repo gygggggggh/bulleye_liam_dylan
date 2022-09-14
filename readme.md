@@ -2,7 +2,7 @@
 
 ## probleme
 
-- affcihe le score a chaque fois
+- afficher le score a chaque fois
 - demander le nombre de joueur -> score en dico
 
 ```python
