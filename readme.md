@@ -16,7 +16,7 @@
 - une liste qui pour le nom des joueur : utilise l'index pour le noms
 
 ```python
-1      2
+0     1
 [dylan,liam]
 ```
 
@@ -28,6 +28,7 @@ les 3 mode de tirs
 
 ## la boucle
 
+```python
 def boucle principale():
     affiche le joueur qui joue  avec "tour de x"
     pour chaque joueur
@@ -38,3 +39,4 @@ def boucle principale():
     regarde si un joueur a un score > 200
     si oui le jeu est finit : x a gagner avec xxx points
     sinon affiche manche suivante
+```
