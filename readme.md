@@ -8,18 +8,18 @@
                                   j2:0
                                   jx:0}
 
--une liste qui pour le nom des joueur : utilise l'index pour le noms
+- une liste qui pour le nom des joueur : utilise l'index pour le noms
 1      2
 [dylan,liam]
 
 ## les fonction
--une fonction tir
+- une fonction tir
 avec 3 condition
 les 3 mode de tirs
 
 ## la boucle
 
-`code` def boucle principale():
+def boucle principale():
     affiche le joueur qui joue  avec "tour de x"
     pour chaque joueur
         demande un mode de tirs
