@@ -14,8 +14,11 @@
 ```
 
 - une liste qui pour le nom des joueur : utilise l'index pour le noms
+
+```python
 1      2
 [dylan,liam]
+```
 
 ## les fonction
 
