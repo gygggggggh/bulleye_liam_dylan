@@ -5,12 +5,12 @@
 - affcihe le score a chaque fois
 - demander le nombre de joueur -> score en dico
 
-```
+'''
 {
   "dylan": "20",
   "schertzer": "180",
 }
-```
+'''
 
 - une liste qui pour le nom des joueur : utilise l'index pour le noms
 1      2
