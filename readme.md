@@ -2,6 +2,8 @@
 
 ## probleme
 
+# les type de donnés
+
 - afficher le score a chaque fois
 - demander le nombre de joueur -> score en dico
 
