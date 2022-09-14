@@ -20,6 +20,11 @@
 [dylan,liam]
 ```
 
+### l'aleatoire
+
+- la fonction randint de convient pas a cette situation
+- nous avont donc deconvert la fonction random.choices
+
 ## les fonction
 
 - une fonction tir
