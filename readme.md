@@ -1,6 +1,6 @@
 ### projet bulleye
 
-#probleme
+# probleme
 
 - affcihe le score a chaque fois
 -demander le nombre de joueur -> score en dico
@@ -12,14 +12,14 @@
 1      2
 [dylan,liam]
 
-##les fonction
+## les fonction
 -une fonction tir
 avec 3 condition
 les 3 mode de tirs
 
-##la boucle
+## la boucle
 
-def boucle principale():
+`code` def boucle principale():
     affiche le joueur qui joue  avec "tour de x"
     pour chaque joueur
         demande un mode de tirs
