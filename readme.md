@@ -40,11 +40,29 @@ for i in range(100):
 
 ```
 
+### CHOICES est interdit
+
+- vu que choices est interdit nous avons creer notre propre systeme d'aleatoire avec randint comme vu dessous
+
+```python
+def Fast_Overarm():
+    random = randint(0,100)
+    if random <= 50:
+        return (0,random)
+    if  51 <= random <= 55:
+        return (20,random)
+    if 56 <= random <= 65:
+       return (30,random)
+    if 66 <= random <= 100:
+        return (40,random)
+
+print(Fast_Overarm)
+```
+
 ## les fonction
 
-- une fonction tir
-avec 3 condition
-les 3 mode de tirs
+- 3 fonction de tir
+- une fonction boucle de jeu
 
 ## la boucle de jeu
 
