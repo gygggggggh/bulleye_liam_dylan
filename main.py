@@ -70,14 +70,14 @@ def mode_de_tire():
           mode_de_tire()
            
     if demande == 1:
-        print("fast")
+         return Fast_Overarm()
     if demande == 2:
-        print("control")
+        return Controlled_overarm()
     if demande == 3:
-        print("lebronjames")
+        return Underarm()
 
 
-mode_de_tire()
+print(mode_de_tire())
     
 
     
