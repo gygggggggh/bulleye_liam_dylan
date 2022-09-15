@@ -58,6 +58,26 @@ def Underarm():
         return 40
     
 
+def mode_de_tire():
+    try :
+        print("quel mode voulez vous ? \n \
+            Fast_Overarm [1] \n \
+            Controlled_overarm [2]\n \
+            Underarm[3]")
+        demande = int(input(">"))
+    except ValueError :
+          print("\nil faut un entier\n")
+          mode_de_tire()
+           
+    if demande == 1:
+        print("fast")
+    if demande == 2:
+        print("control")
+    if demande == 3:
+        print("lebronjames")
+
+
+mode_de_tire()
     
 
     

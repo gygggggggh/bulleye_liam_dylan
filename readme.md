@@ -61,7 +61,9 @@ print(Fast_Overarm)
 
 ## les fonction
 
-- 3 fonction de tir
+1. trois fonction de tir
+2. une fonction de mode de tir pour utilise
+  
 - une fonction boucle de jeu
 
 ## la boucle de jeu
