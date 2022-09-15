@@ -57,7 +57,7 @@ def Underarm():
     if random >= 99:
         return 40
     
-for i in range(100): print(Underarm())
+
     
 
     
