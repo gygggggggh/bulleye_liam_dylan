@@ -1,6 +1,6 @@
 ![alt text](https://img.freepik.com/premium-vector/letter-b-bullseye-logo-vector-template_138551-150.jpg?w=740)
 
-# projet bulleye
+# projet bullseye
 
 ## probleme
 
