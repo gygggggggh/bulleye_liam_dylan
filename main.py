@@ -58,26 +58,62 @@ def Underarm():
         return 40
     
 
+def couleur(r, g, b, texte):
+    """resumée 
+       prend une valeur rgb et un texte et le met en couleur 
+    
+    parametre:
+        r (int): nombre de rouge
+        g (int): nombre de vert
+        b (int): nombre de bleu
+        texte (str):  texte en str
+
+    Returns:
+        str: le texte en couleur
+    """
+    return "\033[38;2;{};{};{}m{} \033[38;2;255;255;255m".format(r, g, b, texte)
+
 def mode_de_tire():
-    try :
-        print("quel mode voulez vous ? \n \
-            Fast_Overarm [1] \n \
-            Controlled_overarm [2]\n \
-            Underarm[3]")
-        demande = int(input(">"))
-    except ValueError :
-          print("\nil faut un entier\n")
-          mode_de_tire()
-           
-    if demande == 1:
-         return Fast_Overarm()
-    if demande == 2:
-        return Controlled_overarm()
-    if demande == 3:
-        return Underarm()
+    """resumé
+    demande a l'utilisateur un nombre entier de 1 a 3 
+    pour selectiner un mode de tir parmis les 3 fonction definit precedaments 
+    et qui gere les entrer utilisateur 
+
+    Returns:
+        int: les points a ajoutez aux joueur actuel
+    """
+    demande = ""
+    while True:
+        while not demande.isdigit():
+            print(couleur(135,206,235,"quel mode voulez vous ?\n \n Fast_Overarm [1] \n Controlled_overarm [2] \n Underarm[3]"))
+            
+            demande = input(couleur(0,100,0,"==>"))
+            #print(couleur(255,0,0,"\nchosis un nombre entier  entre 1 et 3 inclus\n"))   
+        demande = int(demande)
+          
+        if demande == 1:
+                score = Fast_Overarm()
+                break
+        if demande == 2:
+                score = Controlled_overarm()
+                break
+        if demande == 3:
+            score = Underarm()
+            break
+        else:
+            #print(couleur(255,0,0,"\nchosis un nombre entier  entre 1 et 3 inclus\n"))
+            print(couleur(135,206,235,"quel mode voulez vous ? \n \
+                        Fast_Overarm [1] \n \
+                        Controlled_overarm [2]\n \
+                        Underarm[3]"))
+            demande = input(couleur(0,100,0,"==>"))
+            
+    return score
+
+mode_de_tire()
 
 
-print(mode_de_tire())
+
     
 
     
