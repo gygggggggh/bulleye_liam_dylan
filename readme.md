@@ -64,8 +64,8 @@ print(Fast_Overarm)
 
 1. trois fonction de tir
 2. une fonction de mode de tir pour utilise et qui gere les input user
-   
-- une fonction pour colorer 
+
+- une fonction pour colorer les texte
   
 - une fonction boucle de jeu
 
