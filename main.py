@@ -88,7 +88,6 @@ def mode_de_tire():
             print(couleur(135,206,235,"quel mode voulez vous ?\n \n Fast_Overarm [1] \n Controlled_overarm [2] \n Underarm[3]"))
             
             demande = input(couleur(0,100,0,"==>"))
-            #print(couleur(255,0,0,"\nchosis un nombre entier  entre 1 et 3 inclus\n"))   
         demande = int(demande)
           
         if demande == 1:
@@ -101,23 +100,26 @@ def mode_de_tire():
             score = Underarm()
             break
         else:
-            #print(couleur(255,0,0,"\nchosis un nombre entier  entre 1 et 3 inclus\n"))
-            print(couleur(135,206,235,"quel mode voulez vous ? \n \
-                        Fast_Overarm [1] \n \
-                        Controlled_overarm [2]\n \
-                        Underarm[3]"))
+            print(couleur(135,206,235,"quel mode voulez vous ?\n \n Fast_Overarm [1] \n Controlled_overarm [2] \n Underarm[3]"))
             demande = input(couleur(0,100,0,"==>"))
             
     return score
 
-mode_de_tire()
-
-
-
-    
-
-    
-
-
-
+def enter_jeu():
+    """_resumé
+        creer un dictonnaire conntenant le nombre de joueur et leur score
+    """
+    score_board = {}
+    print(couleur(135,206,235,"Bienvenue dans Bulleye veuiller choisir le nb de joueur \n"))
+    nb_joueur = int(input(couleur(0,100,0,"==>")))
+    if  1 < nb_joueur <= 10 :
+        for i in range(nb_joueur):
+            nom = input(f"nom du joueur {i+1}\n>")
+            score_board[nom] = 0
+        #print(score_board) #pour tester pas obliger de mettre
+    if nb_joueur <= 1 or nb_joueur >= 10:
+        print(couleur(255,0,0,"Nombre invalide : minimum 2 joueur et maximum 10 "))
+        enter_jeu()
+        
+enter_jeu()
 
