@@ -100,6 +100,7 @@ def mode_de_tire():
             score = Underarm()
             break
         else:
+            print(couleur(255,0,0,"Nombre invalide : minimun 1 maximun 3 "))
             print(couleur(135,206,235,"quel mode voulez vous ?\n \n Fast_Overarm [1] \n Controlled_overarm [2] \n Underarm[3]"))
             demande = input(couleur(0,100,0,"==>"))
             
@@ -121,5 +122,7 @@ def enter_jeu():
         print(couleur(255,0,0,"Nombre invalide : minimum 2 joueur et maximum 10 "))
         enter_jeu()
         
-enter_jeu()
+mode_de_tire()
+
+#enter_jeu()
 
