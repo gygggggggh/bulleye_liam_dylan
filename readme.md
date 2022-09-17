@@ -68,6 +68,11 @@ print(Fast_Overarm)
 - une fonction pour colorer les texte
   
 - une fonction boucle de jeu
+- une fonction pour creer un dico en fonction du nombre de joueur
+
+### connecter le input au dico
+
+- probleme resolut
 
 ## la boucle de jeu
 

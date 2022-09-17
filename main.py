@@ -111,7 +111,7 @@ def enter_jeu():
         creer un dictonnaire conntenant le nombre de joueur et leur score
     """
     score_board = {}
-    print(couleur(135,206,235,"Bienvenue dans Bulleye veuiller choisir le nb de joueur \n"))
+    print(couleur(135,206,235,"Bienvenue dans Bullseye veuiller choisir le nb de joueur \n"))
     nb_joueur = int(input(couleur(0,100,0,"==>")))
     if  1 < nb_joueur <= 10 :
         for i in range(nb_joueur):
