@@ -74,6 +74,14 @@ print(Fast_Overarm)
 
 - probleme resolut
 
+```python
+nb_joueur = int(input(couleur(0,100,0,"==>")))
+    for i in range(nb_joueur):
+        nom = input(f"nom du joueur {i+1}\n>")
+        score_board[nom] = 0
+
+```
+
 ## la boucle de jeu
 
 ```python
