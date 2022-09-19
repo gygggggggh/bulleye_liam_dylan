@@ -1,5 +1,3 @@
-
-
 # projet bullseye
 
 ## probleme
