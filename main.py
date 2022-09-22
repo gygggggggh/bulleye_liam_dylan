@@ -1,5 +1,7 @@
 # mini projet
 from random import randint
+from this import d
+import tkinter as tk
 
 def Fast_Overarm():
     """resumé
@@ -113,16 +115,46 @@ def enter_jeu():
     score_board = {}
     print(couleur(135,206,235,"Bienvenue dans Bullseye veuiller choisir le nb de joueur \n"))
     nb_joueur = int(input(couleur(0,100,0,"==>")))
-    if  1 < nb_joueur <= 10 :
+    if  1 <= nb_joueur <= 10 :
         for i in range(nb_joueur):
-            nom = input(f"nom du joueur {i+1}\n>")
+            nom = input(couleur(0,125,0,f"nom du joueur {i+1}\n==>"))
             score_board[nom] = 0
         #print(score_board) #pour tester pas obliger de mettre
-    if nb_joueur <= 1 or nb_joueur >= 10:
+    if nb_joueur <= 1 or nb_joueur > 10:
         print(couleur(255,0,0,"Nombre invalide : minimum 2 joueur et maximum 10 "))
         enter_jeu()
-        
-mode_de_tire()
+    return score_board
 
-#enter_jeu()
+
+def tour_de_jeu(score_board):
+    """resumé
+    demande a l'utilisateur de choisir un mode de tir et ajoute les points au joueur actuel
+
+    Args:
+        score_board (dict): le dictionnaire contenant le nom des joueurs et leur score
+    """
+    manche = 0
+    while True:
+        for joueur in score_board:
+            print(couleur(135,206,235,f"c'est la manche {manche} et c'est au tour de {joueur} de tirer"))
+            score = mode_de_tire()
+            score_board[joueur] += score
+            print(couleur(135,256,5,f"{joueur},vous avez marquer {score} points"))
+            print(couleur(135,206,25,f"{joueur},votre score est de {score_board[joueur]} \n"))
+            if score_board[joueur] >= 200:
+                print(couleur(135,206,235,f"vous avez gagner {joueur} \n"))
+                return score_board 
+        manche += 1
+            
+        
+def main():
+    """resumé
+    lance le jeu
+    """
+    score_board = enter_jeu()
+    tour_de_jeu(score_board)
+    
+if __name__ == "__main__":
+    main()
+
 
