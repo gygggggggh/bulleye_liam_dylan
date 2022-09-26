@@ -3,7 +3,9 @@
 ## type de donnés
 
 
-### dictioanire
+### dictionaire
+
+
 
 - pour le tableau des score nous avons utiliser un dictionnaire
 
@@ -52,7 +54,7 @@ def dico_score():
     renvoie un dictionnaire avec les nom des joueur et leur score initialiser a 0
 ```
 
-### tour du jeu 
+### tour du jeu
 
 - une fonction qui vas gerer le tour du jeu en fonction du dico des score jusqua que le score d'un joueur soit egale ou superieur a 200
 
