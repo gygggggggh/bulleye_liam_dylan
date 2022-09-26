@@ -1,7 +1,5 @@
 # mini projet
 from random import randint
-from this import d
-import tkinter as tk
 
 def Fast_Overarm():
     """resumé
