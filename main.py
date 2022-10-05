@@ -1,5 +1,7 @@
 # mini projet
 from random import randint
+from unicodedata import name
+from webbrowser import get
 
 def Fast_Overarm():
     """resumé
@@ -112,16 +114,30 @@ def enter_jeu():
     """
     score_board = {}
     print(couleur(135,206,235,"Bienvenue dans Bullseye veuiller choisir le nb de joueur \n"))
-    nb_joueur = int(input(couleur(0,100,0,"==>")))
+    nb_joueur = ""
+    while   not nb_joueur.isdigit():
+        
+        nb_joueur = input(couleur(0,100,0,"==>"))
+    nb_joueur = int(nb_joueur)
     if  1 <= nb_joueur <= 10 :
         for i in range(nb_joueur):
             nom = input(couleur(0,125,0,f"nom du joueur {i+1}\n==>"))
-            score_board[nom] = 0
-        #print(score_board) #pour tester pas obliger de mettre
+            if nom == "":
+                nom = "joueur " + str(i+1)
+                score_board[nom] = 0
+                
+            if  nom in score_board.keys():
+                nom = nom + str(i+1)
+                score_board[nom] = 0
+                
+            else:
+                score_board[nom] = 0
+                
     if nb_joueur <= 1 or nb_joueur > 10:
         print(couleur(255,0,0,"Nombre invalide : minimum 2 joueur et maximum 10 "))
         enter_jeu()
-    return score_board
+    #print(score_board) #pour tester pas obliger de mettre
+    return score_board 
 
 
 def tour_de_jeu(score_board):
