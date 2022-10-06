@@ -104,7 +104,7 @@ def enter_jeu():
     if nb_joueur <= 1 or nb_joueur > 10:
         print(couleur(255,0,0,"Nombre invalide : minimum 2 joueur et maximum 10 "))
         enter_jeu()
-    #print(score_board) #pour tester pas obliger de mettre
+    print(score_board) #pour tester pas obliger de mettre
     return score_board 
 
 
@@ -122,12 +122,14 @@ def tour_de_jeu(score_board):
             score = mode_de_tire()
             score_board[joueur] += score
             print(couleur(135,256,5,f"{joueur},vous avez marquer {score} points"))
-            print(couleur(135,206,25,f"{joueur},votre score est de {score_board[joueur]} \n"))
+            print(couleur(135,6,25,f"{joueur},votre score est de {score_board[joueur]} \n"))
             if score_board[joueur] >= 200:
                 print(couleur(135,206,235,f"vous avez gagner {joueur} \n"))
                 return score_board 
         manche += 1
             
+
+ 
         
 def main():
     """resumé
