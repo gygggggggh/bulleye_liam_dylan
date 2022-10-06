@@ -94,7 +94,7 @@ def enter_jeu():
                 nom = "joueur" + str(i+1)
                 score_board[nom] = 0
                 
-            if  nom in score_board.keys():
+            elif  nom in score_board.keys():
                 nom = nom + str(i+1)
                 score_board[nom] = 0
                 
