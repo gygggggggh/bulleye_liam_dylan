@@ -102,3 +102,6 @@ def  main():
 - nous avons dabord pas reussi a gerer le dico des score
 - les entrer de l'utilisateur n'etait pas gerer
 - l'algorithme de tir n'etait pas gerer proprement
+- les probalite etaient fausse
+
+

@@ -3,19 +3,7 @@ import random
 
 
 
-def couleur(r, g, b, texte):
-    """resumée 
-       prend une valeur rgb et un texte et le met en couleur 
-    
-    parametre:
-        r (int): nombre de rouge
-        g (int): nombre de vert
-        b (int): nombre de bleu
-        texte (str):  texte en str
-
-    Returns:
-        str: le texte en couleur
-    """
+def couleur(r: int, g: int, b: int, texte: str) -> str:
     return "\033[38;2;{};{};{}m{} \033[38;2;255;255;255m".format(r, g, b, texte)
 
 def mode_de_tire():
@@ -108,7 +96,7 @@ def enter_jeu():
     return score_board 
 
 
-def tour_de_jeu(score_board):
+def tour_de_jeu(score_board: dict) -> dict:
     """resumé
     demande a l'utilisateur de choisir un mode de tir et ajoute les points au joueur actuel
 
@@ -140,5 +128,4 @@ def main():
     
 if __name__ == "__main__":
     main()
-
 
